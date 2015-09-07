@@ -27,7 +27,7 @@ func main() {
 
 	host, _, _ := net.SplitHostPort(servername)
 
-	auth := smtp.PlainAuth("", "service@qq.net", "xxx", host)
+	auth := smtp.PlainAuth("", "service@qq.net", "user-password", host)
 
 	// TLS config
 	tlsconfig := &tls.Config{
